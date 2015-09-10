@@ -19,3 +19,471 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+// SELECT SCREEN
+
+header{
+  background-color:rgba(0, 30 , 100, .9);
+}
+
+.instructions{
+  color:white;
+  padding-left:20px;
+  padding-top:30px;
+  padding-bottom:10px;
+}
+
+.go-to-bar{
+  background-color: white;
+  color:rgba(0, 0 , 135, .9);;
+  font-weight:bold;
+
+}
+
+.beer-mug-left{
+  display:inline-block;
+  margin-left:350px;
+  vertical-align:bottom;
+}
+
+.beer-mug-right{
+  display:inline-block;
+  vertical-align:bottom;
+}
+
+.title{
+  margin:0px;
+  color:white;
+  text-align:center;
+  text-decoration:underline;
+  font-style:italic;
+  font-size:48px;
+  display:inline-block;
+}
+
+.main-container{
+  @include outer-container(1280px);
+  height:750px;
+  background-image:url("../../images/map-background.jpg");
+  background-size:cover;
+  background-position:center center;
+}
+
+.leader-buttons{
+  @include span-columns(12);
+  margin-top:100px;
+}
+
+.leader-buttons button{
+  border-radius: 20px;
+}
+
+.country{
+  font-weight:bold;
+}
+
+.top-line{
+  margin-bottom:7px;
+}
+
+.Cameron{
+  @include shift(4.5);
+  transition: all .2s ease-in-out;
+}
+
+.Cameron:hover{
+  background-image:url(../../images/uk-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.Putin{
+  @include shift(1.5);
+  transition: all .2s ease-in-out;
+}
+
+.Putin:hover{
+  background-image:url(../../images/russia-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.second-line{
+  margin-bottom:10px;
+}
+
+.Hollande{
+  @include shift(4.5);
+  transition: all .2s ease-in-out;
+}
+
+.Hollande:hover{
+  background-image:url(../../images/france-flag.jpg);
+  background-size:cover;
+  background-position: center center;
+  transform: scale(2.5);
+}
+
+.Merkel{
+  @include shift(.1);
+  vertical-align:top;
+  transition: all .2s ease-in-out;
+}
+
+.Merkel:hover{
+  background-image:url(../../images/germany-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+
+.third-line{
+  margin-bottom:20px;
+}
+
+.Obama{
+  @include shift(1.3);
+  transition: all .2s ease-in-out;
+}
+
+.Obama:hover{
+  background-image:url(../../images/usa-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.Al-Assad{
+  @include shift(4.4);
+  transition: all .2s ease-in-out;
+}
+
+.Al-Assad:hover{
+  background-image:url(../../images/syria-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.Jong-un{
+  @include shift(3);
+  transition: all .2s ease-in-out;
+}
+
+.Jong-un:hover{
+  background-image:url(../../images/north-korea-flag.png);
+  background-size:cover;
+  background-position: center center;
+  transform: scale(2.5);
+}
+
+.fourth-line{
+  margin-bottom:180px;
+}
+
+.Castro{
+  @include shift(1.1);
+  transition: all .2s ease-in-out;
+}
+
+.Castro:hover{
+  background-image:url(../../images/cuba-flag.png);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.fifth-line{
+  margin-bottom:40px;
+}
+
+.Mugabe{
+  @include shift(5.9);
+  transition: all .2s ease-in-out;
+}
+
+.Mugabe:hover{
+  background-image:url(../../images/zimbabwe-flag.jpg);
+  background-size:cover;
+  transform: scale(2.5);
+}
+
+.Abbott{
+  @include shift(10.7);
+  transition: all .2s ease-in-out;
+}
+
+.Abbott:hover{
+  background-image:url(../../images/australia-flag.gif);
+  background-size:cover;
+  background-position: center center;
+  transform: scale(2.5);
+}
+
+// PLAY SCREEN
+
+.main-container-play{
+  @include outer-container(1280px);
+  background-image: url('../../images/empty-bar.jpg');
+  background-size:cover;
+  background-position:center center;
+  height:650px;
+}
+
+.champion{
+  display:inline-block;
+  margin-top:295px;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+.drinks-one{
+  display:inline-block;
+  margin-top:295px;
+}
+
+.start-drinking{
+  display:inline-block;
+  margin-top:295px;
+  margin-left:25px;
+  margin-right:25px;
+  font-weight:bold;
+  padding:10px;
+  background-color:blue;
+  color:yellow;
+}
+
+.drinks-two{
+  display:inline-block;
+  margin-top:295px;
+}
+
+.buddies{
+  display:inline-block;
+  margin-top:295px;
+  padding-right:40px;
+  padding-left:40px;
+}
+
+.beer-one,
+.beer-two,
+.beer-three,
+.beer-four,
+.beer-five{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.beer-one-button,
+.beer-two-button,
+.beer-three-button,
+.beer-four-button,
+.beer-five-button{
+  padding:0px;
+  transition: all .2s ease-in-out;
+  background-color:transparent;
+  border:none;
+}
+
+.beer-one-button:hover,
+.beer-two-button:hover,
+.beer-three-button:hover,
+.beer-four-button:hover,
+.beer-five-button:hover{
+  transform: scale(2.5);
+}
+
+.health-money-bars{
+  @include span-columns(12);
+  background-color: rgba(0, 0, 0, .5);
+  margin-top:5px;
+}
+
+.champ-bars{
+  @include span-columns(6);
+  color:white;
+  padding-left:40px;
+}
+
+.champ-health-bar-name{
+  display:block;
+}
+
+.champ-health-bar{
+  width:550px;
+  height:15px;
+  background-color:red;
+  margin-top:10px;
+  border:2px solid white;
+  border-radius:5px;
+  text-align:center;
+  font-size:10px;
+}
+
+.champ-money-bar-name{
+  display:block;
+}
+
+.champ-money-bar{
+  width:550px;
+  height:15px;
+  background-color:green;
+  margin-top:10px;
+  border:2px solid white;
+  border-radius:5px;
+  text-align:center;
+  font-size:10px;
+}
+
+.buddy-bars{
+  @include span-columns(6);
+  color:white;
+  text-align:right;
+  padding-right:60px;
+}
+
+.buddy-health-bar-name{
+  display:block;
+}
+
+.buddy-health-bar{
+  float:right;
+  width:550px;
+  height:15px;
+  background-color:red;
+  margin-top:10px;
+  border:2px solid white;
+  border-radius:5px;
+  text-align:center;
+  font-size:10px;
+}
+
+.buddy-money-bar-name{
+  display:block;
+  padding-top:25px;
+}
+
+.buddy-money-bar{
+  float:right;
+  width:550px;
+  height:15px;
+  background-color:green;
+  margin-top:10px;
+  border:2px solid white;
+  border-radius:5px;
+  text-align:center;
+  font-size:10px;
+}
+
+.play-instructions{
+  border:5px solid blue;
+}
+
+.play-instructions-title{
+  text-align:center;
+}
+
+.drink-instructions{
+  margin-left:40px;
+  font-size:18px;
+}
+
+//WIN SCREEN
+
+.main-container-win{
+  background-image:url('../../images/empty-bar.jpg');
+  background-size:cover;
+  height:690px;
+  padding-top:50px;
+}
+
+.win-container{
+  background-image:url('../../images/fireworks.png');
+  height:500px;
+  width:500px;
+  margin-left:390px;
+  padding-top:0px;
+  border:10px solid yellow;
+}
+
+.winner-header{
+  font-size:50px;
+  text-align:center;
+  margin-top:0px;
+  padding-top:10px;
+  font-style:italic;
+  color:yellow;
+  //background-color:rgba(0, 0, 180, 1);
+  border-top:5px solid yellow;
+  border-bottom:5px solid yellow;
+}
+
+.winner-image{
+  margin-left:135px;
+}
+
+.winner-name{
+  text-align:center;
+  background-color: yellow;
+  font-weight:bold;
+  padding:3px;
+  //border: 3px solid black;
+}
+
+.new-game{
+  margin-top:10px;
+  margin-left:85px;
+  margin-right:100px;
+  font-weight:bold;
+  background-color:rgba(0, 200, 0, 1);
+  color:black;
+}
+
+.rematch{
+  margin-right:85px;
+  font-weight:bold;
+  background-color:rgba(200, 0, 0, 1);
+  color:black;
+}
+
+//LOSE SCREEN
+
+.main-container-lose{
+  background-image:url('../../images/empty-bar.jpg');
+  background-size:cover;
+  height:690px;
+  padding-top:50px;
+}
+
+.lose-container{
+  background-image:url('../../images/bed.png');
+  background-position:center center;
+  background-color:black;
+  height:500px;
+  width:500px;
+  margin-left:390px;
+  padding-top:0px;
+  border:10px solid red;
+}
+
+.loser-header{
+  font-size:50px;
+  text-align:center;
+  margin-top:0px;
+  padding-top:10px;
+  font-style:italic;
+  color:red;
+  //background-color:rgba(0, 0, 180, 1);
+  border-top:5px solid red;
+  border-bottom:5px solid red;
+}
+
+.loser-image{
+  margin-left:135px;
+}
+
+.loser-name{
+  text-align:center;
+  background-color: red;
+  font-weight:bold;
+  padding:3px;
+  color:black;
+  //border: 3px solid black;
+}
