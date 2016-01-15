@@ -14,14 +14,28 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
+<<<<<<< .merge_file_BsBoSn
 $mobile: new-breakpoint(max-width 768px);
 $desktop: new-breakpoint(min-width 902px);
 
+=======
+<<<<<<< HEAD
+=======
+$mobile: new-breakpoint(max-width 768px);
+$desktop: new-breakpoint(min-width 902px);
+
+>>>>>>> a09fa686b90f6ceea7ac099d6d7e8416f9b051ee
+>>>>>>> .merge_file_k0lujW
 body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
 }
+<<<<<<< .merge_file_BsBoSn
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_k0lujW
 
 //Desktop
 
@@ -779,3 +793,7 @@ header{
 
 
 }
+<<<<<<< .merge_file_BsBoSn
+=======
+>>>>>>> a09fa686b90f6ceea7ac099d6d7e8416f9b051ee
+>>>>>>> .merge_file_k0lujW
