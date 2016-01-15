@@ -1,0 +1,116 @@
+<div class="main-container-play">
+
+
+  <div class="drinkText">
+    <div class='myDrinkText'></div>
+    <div class='yourDrinkText'></div>
+  </div>
+
+  <div class="playBar">
+
+    <div class="champion"></div>
+
+    <div class="drinks-one">
+      <button class="beerSelect beer-one-button">
+        <input type="image" name="IPA" class="beer-one" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/ipa.png">
+      </button>
+
+      <button class="beerSelect beer-two-button">
+        <input type="image" name="Wheat" class="beer-two" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/wheat.png">
+      </button>
+
+      <button class="beerSelect beer-three-button">
+        <input type="image" name="Ale" class="beer-three" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/ale.png">
+      </button>
+
+      <button class="beerSelect beer-four-button">
+        <input type="image" name="Porter" class="beer-four" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/porter.png">
+      </button>
+
+      <button class="beerSelect beer-five-button">
+        <input type="image" name="Stout" class="beer-five" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/stout.png">
+      </button>
+    </div>
+
+    <button class="start-drinking get-money">Drink!</button>
+
+    <div class="drinks-two">
+      <img class="beer-five" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/stout.png">
+      <img class="beer-four" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/porter.png">
+      <img class="beer-three" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/ale.png">
+      <img class="beer-two" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/wheat.png">
+      <img class="beer-one" style="height:auto; width:auto; max-width:100px; max-height:100px;" src="../../images/ipa.png">
+    </div>
+
+    <div class="buddies"></div>
+
+  </div>
+
+  <div class="health-money-bars">
+
+    <div class="champ-bars">
+
+      <div class="topChampBar">
+        <div class="champNameSobriety">
+          <h2 class="champ-health-bar-name">Sobriety:</h2>
+          <div class="champSobrietyNumber"></div>
+        </div>
+        <progress class="champ-health-bar"></progress>
+      </div>
+
+      <div class="bottomChampBar">
+        <div class="champNameMoney">
+          <h2 class="champ-money-bar-name">Money:</h2>
+          <div class="champMoneyNumber"></div>
+        </div>
+        <progress class="champ-money-bar"></progress>
+      </div>
+
+    </div>
+
+    <div class="buddy-bars">
+
+        <div class="topBuddyBar">
+          <div class="buddyNameSobriety">
+            <h2 class="buddy-health-bar-name">Sobriety:</h2>
+            <div class="buddySobrietyNumber"></div>
+          </div>
+          <progress class="buddy-health-bar"></progress>
+        </div>
+
+        <div class="bottomBuddyBar">
+          <div class="buddyNameMoney">
+            <h2 class="buddy-money-bar-name">Money:</h2>
+            <div class="buddyMoneyNumber"></div>
+          </div>
+          <progress class="buddy-money-bar"></progress>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="play-instructions">
+
+  <h2 class="play-instructions-title">Instructions</h2>
+
+  <p class="drink-instructions">
+    - Click the "Drink!" button to start your match.</br>
+    - Select one of the beverages provided to give to your drinking buddy (opponent).</br>
+    - Beer costs (money) and point values (alcohol content) are as follows.</br>
+      - From left to right</br>
+          - <strong>IPA</strong> - costs: <strong>$14</strong>, alcohol content: <strong>5%-15%</strong> (random).</br>
+          - <strong>Wheat</strong> - costs: <strong>$12</strong>, alcohol content: <strong>7%-13%</strong> (random).</br>
+          - <strong>Ale</strong> - costs: <strong>$11</strong>, alcohol content: <strong>8%-12%</strong> (random).</br>
+          - <strong>Porter</strong> - costs: <strong>$12</strong>, alcohol content: <strong>9%-11%</strong> (random).</br>
+          - <strong>Stout</strong> - costs: <strong>$13</strong>, alcohol content: <strong>10%</strong>.</br>
+    - The first player to have their health bar reach < or = 0 loses.</br>
+    - If you run out of money before either player loses you can get <strong>$15</strong> by giving up <strong>10 health</strong>.</br>
+    - When a winner is decided, you will eaither be sent to the "Winner" or "Loser" screen where you can either rematch your previous opponent or go back to select a new champion.</br>
+  </p>
+
+</div>
