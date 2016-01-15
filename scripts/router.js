@@ -1,15 +1,12 @@
+window.Game = window.Game || {};
+(function(){
 
-
-var DrunkRouter = Backbone.Router.extend({
+Game.GameRouter = Backbone.Router.extend({
   routes: {
-    " ": "index",
+    "": "index",
     "play": "play",
     "win": "win",
     "lose": "lose"
-  },
-
-  initialize: function(){
-    //this.render();
   },
 
   index: function(){
@@ -29,5 +26,6 @@ var DrunkRouter = Backbone.Router.extend({
   }
 
 });
-
-export default new DrunkRouter();
+  Game.router = new Game.GameRouter();
+})();
+//export default new DrunkRouter();

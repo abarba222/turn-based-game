@@ -14,11 +14,18 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
+$mobile: new-breakpoint(max-width 768px);
+$desktop: new-breakpoint(min-width 902px);
+
 body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+//Desktop
+
+@media (min-width: 902px) {
 
 // SELECT SCREEN
 
@@ -27,6 +34,7 @@ header{
 }
 
 .instructions{
+  display:inline-block;
   color:white;
   padding-left:20px;
   padding-top:30px;
@@ -38,6 +46,25 @@ header{
   color:rgba(0, 0 , 135, .9);;
   font-weight:bold;
 
+}
+
+.display{
+  display:inline-block;
+  width:50%;
+}
+
+.championDisplay{
+
+}
+
+.champ-image{
+  margin-left: 39%;
+}
+
+.your-champion{
+  color:white;
+  font-size:20px;
+  text-align:center;
 }
 
 .beer-mug-left{
@@ -227,21 +254,54 @@ header{
   height:650px;
 }
 
+
+.drinkText{
+  @include span-columns(12);
+  //display: inline-block;
+  //float: right;
+  //padding-left:56%;
+  padding-top:220px;
+  margin-bottom:70px;
+
+}
+
+.champText{
+  @include span-columns(6);
+  //display: inline-block;
+  font-size: 20px;
+  color: aqua;
+  background-color: rgba(0, 0, 0, .2);
+  padding-left: 20%;
+}
+
+.buddyText{
+  @include span-columns(6);
+  //display: inline-block;
+  font-size: 20px;
+  color: aqua;
+  background-color: rgba(0, 0, 0, .2);
+  padding-left:20%;
+}
+
+.playBar{
+  display:block;
+}
+
 .champion{
   display:inline-block;
-  margin-top:295px;
-  padding-left:40px;
-  padding-right:40px;
+  //margin-top:295px;
+  padding-left:30px;
+  padding-right:30px;
 }
 
 .drinks-one{
   display:inline-block;
-  margin-top:295px;
+  //margin-top:295px;
 }
 
 .start-drinking{
   display:inline-block;
-  margin-top:295px;
+  //margin-top:295px;
   margin-left:25px;
   margin-right:25px;
   font-weight:bold;
@@ -252,14 +312,14 @@ header{
 
 .drinks-two{
   display:inline-block;
-  margin-top:295px;
+  //margin-top:295px;
 }
 
 .buddies{
   display:inline-block;
-  margin-top:295px;
-  padding-right:40px;
-  padding-left:40px;
+  //margin-top:295px;
+  padding-right:30px;
+  padding-left:30px;
 }
 
 .beer-one,
@@ -293,7 +353,7 @@ header{
 .health-money-bars{
   @include span-columns(12);
   background-color: rgba(0, 0, 0, .5);
-  margin-top:5px;
+  padding-bottom:10px;
 }
 
 .champ-bars{
@@ -302,30 +362,52 @@ header{
   padding-left:40px;
 }
 
-.champ-health-bar-name{
+.topChampBar{
   display:block;
+}
+
+.champ-health-bar-name{
+  display:inline-block;
+}
+
+.champSobrietyNumber{
+  display: inline-block;
+  padding-left: 5px;
+  color:red;
+  font-size:20px;
 }
 
 .champ-health-bar{
-  width:550px;
+  display:block;
+  width:200px;
   height:15px;
   background-color:red;
-  margin-top:10px;
   border:2px solid white;
   border-radius:5px;
-  text-align:center;
   font-size:10px;
+  text-align:center;
 }
 
-.champ-money-bar-name{
+.champNameMoney{
   display:block;
 }
 
+.champ-money-bar-name{
+  display:inline-block;
+}
+
+.champMoneyNumber{
+  display: inline-block;
+  padding-left: 5px;
+  color:green;
+  font-size:20px;
+}
+
 .champ-money-bar{
-  width:550px;
+  display:block;
+  width:200px;
   height:15px;
   background-color:green;
-  margin-top:10px;
   border:2px solid white;
   border-radius:5px;
   text-align:center;
@@ -339,33 +421,54 @@ header{
   padding-right:60px;
 }
 
+.topBuddyBar{
+  display:inline-block;
+}
+
 .buddy-health-bar-name{
-  display:block;
+  display:inline-block;
+}
+
+.buddySobrietyNumber{
+  display:inline-block;
+  padding-left: 5px;
+  color:red;
+  font-size:20px;
 }
 
 .buddy-health-bar{
   float:right;
-  width:550px;
+  display:block;
+  width:200px;
   height:15px;
   background-color:red;
-  margin-top:10px;
   border:2px solid white;
   border-radius:5px;
   text-align:center;
   font-size:10px;
 }
 
-.buddy-money-bar-name{
+.buddyNameMoney{
   display:block;
-  padding-top:25px;
+}
+
+.buddy-money-bar-name{
+  display:inline-block;
+}
+
+.buddyMoneyNumber{
+  display:inline-block;
+  padding-left: 5px;
+  color:green;
+  font-size:20px;
 }
 
 .buddy-money-bar{
   float:right;
-  width:550px;
+  display: block;
+  width:200px;
   height:15px;
   background-color:green;
-  margin-top:10px;
   border:2px solid white;
   border-radius:5px;
   text-align:center;
@@ -415,7 +518,7 @@ header{
   border-bottom:5px solid yellow;
 }
 
-.winner-image{
+.playerWins{
   margin-left:135px;
 }
 
@@ -475,7 +578,7 @@ header{
   border-bottom:5px solid red;
 }
 
-.loser-image{
+.playerLoses{
   margin-left:135px;
 }
 
@@ -486,4 +589,193 @@ header{
   padding:3px;
   color:black;
   //border: 3px solid black;
+}
+
+}
+
+
+
+//Mobile
+
+@media (max-width: 768px) and (min-width: 0px) {
+
+  // SELECT SCREEN
+
+  header{
+    background-color:rgba(0, 30 , 100, .9);
+  }
+
+  .instructions{
+    display:inline-block;
+    color:white;
+    padding-left:20px;
+    padding-top:30px;
+    padding-bottom:10px;
+    width:45%;
+  }
+
+  .go-to-bar{
+    background-color: white;
+    color:rgba(0, 0 , 135, .9);;
+    font-weight:bold;
+
+  }
+
+  .display{
+    display:inline-block;
+    width:50%;
+  }
+
+  .championDisplay{
+
+  }
+
+  .champ-image{
+    margin-left: 39%;
+  }
+
+  .your-champion{
+    color:white;
+    font-size:20px;
+    text-align:center;
+  }
+
+  .beer-mug-left{
+    display:inline-block;
+    margin-left:18%;
+    vertical-align:bottom;
+  }
+
+  .beer-mug-right{
+    display:inline-block;
+    vertical-align:bottom;
+  }
+
+  .title{
+    margin:0px;
+    color:white;
+    text-align:center;
+    text-decoration:underline;
+    font-style:italic;
+    font-size:38px;
+    display:inline-block;
+  }
+
+  .main-container{
+    width: auto;
+  }
+
+  .leader-buttons{
+    @include span-columns(12);
+    //margin-top:100px;
+  }
+
+
+
+  .country{
+    font-weight:bold;
+  }
+
+/*   .top-line{
+  margin-bottom:7px;
+} */
+
+  .Cameron{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/uk-flag.png);
+    background-size:contain;
+    border-style: outset;
+  }
+
+  .Putin{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/russia-flag.png);
+    background-size:contain;
+    border-style: outset;
+  }
+
+  /* .second-line{
+    margin-bottom:10px;
+  } */
+
+  .Hollande{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/france-flag.jpg);
+    background-size:cover;
+    background-position: center center;
+    border-style: outset;
+  }
+
+  .Merkel{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/germany-flag.png);
+    background-size:contain;
+    border-style: outset;
+  }
+
+
+  .Obama{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/usa-flag.png);
+    background-size:cover;
+    border-style: outset;
+  }
+
+  .Al-Assad{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/syria-flag.png);
+    background-size:contain;
+    border-style: outset;
+  }
+
+  .Jong-un{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/north-korea-flag.png);
+    background-size:contain;
+    background-position: center center;
+    border-style: outset;
+  }
+
+  /* .fourth-line{
+    margin-bottom:180px;
+  } */
+
+  .Castro{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/cuba-flag.png);
+    background-size:contain;
+    border-style: outset;
+  }
+
+/*   .fifth-line{
+  margin-bottom:40px;
+} */
+
+  .Mugabe{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/zimbabwe-flag.jpg);
+    background-size:contain;
+    border-style: outset;
+  }
+
+  .Abbott{
+    height:100px;
+    width:100%;
+    background-image:url(../../images/australia-flag.gif);
+    background-size:contain;
+    //background-position: center center;
+    border-style: outset;
+  }
+
+
+
 }

@@ -1,0 +1,331 @@
+[
+  {
+    "name": "Obama",
+    "image": "../images/characters/Barack-Obama.png",
+    "sobriety": "100",
+    "money": "190",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Cameron",
+    "image": "../images/characters/David-Cameron.png",
+    "sobriety": "130",
+    "money": "160",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Hollande",
+    "image": "../images/characters/francois-hollande.png",
+    "sobriety": "140",
+    "money": "150",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Merkel",
+    "image": "../images/characters/Angela-Merkel.png",
+    "sobriety": "120",
+    "money": "170",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Abbott",
+    "image": "../images/characters/Tony-Abbott.png",
+    "sobriety": "110",
+    "money": "180",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Putin",
+    "image": "../images/characters/vladimir-putin.png",
+    "sobriety": "150",
+    "money": "140",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Mugabe",
+    "image": "../images/characters/robert-mugabe.png",
+    "sobriety": "170",
+    "money": "120",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Castro",
+    "image": "../images/characters/raul-castro.png",
+    "sobriety": "160",
+    "money": "130",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Jong-un",
+    "image": "../images/characters/kim-jong-un.png",
+    "sobriety": "190",
+    "money": "100",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  },
+
+  {
+    "name": "Al-Assad",
+    "image": "../images/characters/bashar-al-assad.png",
+    "sobriety": "180",
+    "money": "110",
+
+    "moves": [{
+      "name": "IPA",
+      "damage": "10",
+      "cost": "10"
+    },
+    {
+      "name": "Wheat",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Ale",
+      "damage": "5",
+      "cost": "4"
+    },
+    {
+      "name": "Porter",
+      "damage": "6",
+      "cost": "5"
+    },
+    {
+      "name": "Stout",
+      "damage": "8",
+      "cost": "8"
+      }]
+  }
+]
